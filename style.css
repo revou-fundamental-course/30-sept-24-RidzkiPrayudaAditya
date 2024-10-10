@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6DD5FA, #2980B9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.container {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #2980B9;
+}
+
+.converter-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.converter {
+    flex: 1;
+    min-width: 280px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980B9;
+    color: #fff;
+}
+
+.reset-btn {
+    background-color: #e74c3c;
+}
+
+.reset-btn:hover {
+    background-color: #c0392b;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.explanation {
+    flex: 1;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.formula-section {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.formula-section h2 {
+    margin-bottom: 10px;
+}
+
+.formula-section p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+footer {
+    background-color: #2980B9;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .converter-section {
+        flex-direction: column;
+    }
+
+    input[type="text"], button {
+        font-size: 14px;
+    }
+}
